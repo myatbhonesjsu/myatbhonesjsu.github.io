@@ -29,7 +29,7 @@
 .pu{font-size:13px;font-weight:600;color:#262626;}
 .ploc{font-size:11px;color:#8e8e8e;}
 .pmore{font-size:20px;color:#262626;line-height:1;padding:0 4px;}
-.cvp{width:390px;height:390px;position:relative;overflow:hidden;background:#111;cursor:grab;user-select:none;}
+.cvp{width:390px;height:440px;position:relative;overflow:hidden;background:#111;cursor:grab;user-select:none;}
 .cvp:active{cursor:grabbing;}
 .cs{position:absolute;inset:0;opacity:0;transform:translateX(100%);transition:transform 0.38s cubic-bezier(.4,0,.2,1),opacity 0.35s;will-change:transform;}
 .cs.active{opacity:1;transform:translateX(0);}
@@ -37,53 +37,59 @@
 .cbg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1);transition:transform 9s ease;}
 .cs.active .cbg{transform:scale(1.06);}
 .cov{position:absolute;inset:0;}
-.cc{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:22px 20px 20px;}
+.cc{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px 22px 22px;}
 .cey{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:6px;font-family:-apple-system,sans-serif;}
-.cti{font-family:'Playfair Display',serif;font-size:27px;font-weight:700;line-height:1.1;margin-bottom:9px;}
+.cti{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;line-height:1.1;margin-bottom:9px;}
 .cti em{font-style:italic;}
-.cru{width:30px;height:2px;margin-bottom:10px;}
-.cbo{font-size:11.5px;line-height:1.62;max-width:300px;font-family:-apple-system,sans-serif;}
-.cci{margin-top:8px;font-size:9px;font-style:italic;border-top:1px solid rgba(255,255,255,0.15);padding-top:7px;opacity:0.52;font-family:-apple-system,sans-serif;}
+.cru{width:30px;height:2px;margin-bottom:11px;}
+.cbo{font-size:12px;line-height:1.65;max-width:320px;font-family:-apple-system,sans-serif;}
+.cbo2{font-size:11px;line-height:1.65;max-width:320px;font-family:-apple-system,sans-serif;margin-top:7px;}
+.cci{margin-top:9px;font-size:9px;font-style:italic;border-top:1px solid rgba(255,255,255,0.15);padding-top:7px;opacity:0.52;font-family:-apple-system,sans-serif;}
 .csn{position:absolute;top:12px;right:14px;background:rgba(0,0,0,0.48);color:#fff;font-size:10px;font-weight:600;padding:3px 8px;border-radius:20px;font-family:-apple-system,sans-serif;z-index:5;}
 .ctag{display:inline-block;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:20px;margin-bottom:8px;font-family:-apple-system,sans-serif;}
-.sr{display:flex;gap:7px;margin-bottom:11px;}
-.sb2{flex:1;border:1px solid rgba(255,255,255,0.25);border-radius:8px;padding:8px 5px;text-align:center;background:rgba(0,0,0,0.32);}
-.sbn{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:#fff;line-height:1;}
+.sr{display:flex;gap:7px;margin-bottom:12px;}
+.sb2{flex:1;border:1px solid rgba(255,255,255,0.25);border-radius:8px;padding:9px 5px;text-align:center;background:rgba(0,0,0,0.32);}
+.sbn{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;line-height:1;}
 .sbl{font-size:8px;color:rgba(255,255,255,0.48);letter-spacing:0.06em;margin-top:2px;text-transform:uppercase;font-family:-apple-system,sans-serif;}
 .tvs{display:flex;align-items:stretch;border-radius:9px;overflow:hidden;margin-bottom:11px;}
-.tvl,.tvr{flex:1;padding:10px 7px;display:flex;align-items:center;justify-content:center;}
+.tvl,.tvr{flex:1;padding:10px 8px;display:flex;align-items:center;justify-content:center;}
 .tvm{display:flex;align-items:center;justify-content:center;width:24px;font-size:8px;font-weight:600;color:rgba(255,255,255,0.4);background:rgba(0,0,0,0.65);font-family:-apple-system,sans-serif;}
 .tvw{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;line-height:1.2;text-align:center;}
-.fr{background:rgba(0,0,0,0.38);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:10px 11px 8px;}
+.fr{background:rgba(0,0,0,0.38);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:11px 12px 9px;}
+.blist{list-style:none;padding:0;margin-top:6px;display:flex;flex-direction:column;gap:4px;}
+.blist li{font-size:11px;color:rgba(255,255,255,0.8);line-height:1.5;font-family:-apple-system,sans-serif;padding-left:12px;position:relative;}
+.blist li::before{content:'—';position:absolute;left:0;opacity:0.5;}
 .ds{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:4px;z-index:5;}
 .dd{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.38);transition:all 0.2s;}
 .dd.active{background:#fff;width:14px;border-radius:3px;}
 .pa{padding:9px 12px 4px;display:flex;align-items:center;gap:14px;}
 .aic{display:flex;gap:14px;flex:1;}
 .ab{background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center;}
-.pl{padding:0 12px 5px;font-size:13px;font-weight:600;color:#262626;}
-.pc{padding:0 12px 5px;font-size:13px;color:#262626;line-height:1.5;}
-.pt{padding:0 12px 9px;font-size:10px;color:#8e8e8e;text-transform:uppercase;letter-spacing:0.03em;}
+.pl{padding:0 12px 6px;font-size:13px;font-weight:600;color:#262626;}
+.pc{padding:0 12px 5px;font-size:13px;color:#262626;line-height:1.6;}
+.pt{padding:0 12px 10px;font-size:10px;color:#8e8e8e;text-transform:uppercase;letter-spacing:0.03em;}
 .cbar{padding:7px 12px 14px;display:flex;align-items:center;gap:10px;border-top:0.5px solid #efefef;}
 .cav2{width:28px;height:28px;border-radius:50%;background:#e0d8cc;flex-shrink:0;}
 .ci{flex:1;font-size:13px;color:#8e8e8e;}
 .cp{font-size:13px;font-weight:600;color:#0095f6;}
 .ignavbar{background:#fff;padding:10px 0 6px;display:flex;justify-content:space-around;align-items:center;border-top:0.5px solid #dbdbdb;}
-.nb{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;cursor:pointer;}
+.nb2{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;cursor:pointer;}
 .hi{background:#000;padding:8px 0 10px;display:flex;justify-content:center;}
 .hb{width:120px;height:4px;background:rgba(255,255,255,0.3);border-radius:2px;}
-
 .img-credits{width:390px;background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:16px 18px;}
 .ic-title{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;color:var(--color-text-tertiary);margin-bottom:12px;font-family:-apple-system,sans-serif;}
 .ic-table{width:100%;border-collapse:collapse;font-family:-apple-system,sans-serif;}
 .ic-table tr{border-bottom:0.5px solid var(--color-border-tertiary);}
 .ic-table tr:last-child{border-bottom:none;}
 .ic-table td{padding:7px 0;vertical-align:top;}
-.ic-slide{font-size:10px;font-weight:500;color:var(--color-text-tertiary);white-space:nowrap;padding-right:10px;min-width:56px;}
+.ic-slide{font-size:10px;font-weight:500;color:var(--color-text-tertiary);white-space:nowrap;padding-right:10px;min-width:52px;}
 .ic-desc{font-size:11px;color:var(--color-text-secondary);line-height:1.45;}
 .ic-author{color:var(--color-text-primary);font-weight:500;}
 .ic-link{font-size:10px;color:var(--color-text-tertiary);display:block;margin-top:1px;word-break:break-all;}
 .ic-license{display:inline-block;font-size:9px;background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:4px;padding:1px 6px;margin-top:2px;}
+.quote-block{border-left:2px solid rgba(255,255,255,0.3);padding-left:10px;margin:8px 0;}
+.quote-text{font-size:11px;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.55;font-family:'Playfair Display',serif;}
+.quote-attr{font-size:9.5px;color:rgba(255,255,255,0.45);margin-top:3px;font-family:-apple-system,sans-serif;}
 </style>
 
 <div class="igw">
@@ -124,134 +130,166 @@
 
       <div class="cvp" id="cvp">
 
+        <!-- SLIDE 0: COVER -->
         <div class="cs active" id="cs0">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center top;"></div>
-          <div class="cov" style="background:linear-gradient(160deg,rgba(6,3,1,0.38),rgba(6,3,1,0.84));"></div>
+          <div class="cov" style="background:linear-gradient(160deg,rgba(6,3,1,0.35),rgba(6,3,1,0.86));"></div>
           <div class="csn">1 / 8</div>
           <div class="ds" id="dots"></div>
           <div class="cc">
-            <div class="cey" style="color:#e8896e;">AI × Copyright × Music</div>
+            <div class="cey" style="color:#e8896e;">AI × Copyright × Music — A Research Breakdown</div>
             <div class="cti" style="color:#f5f0e8;">Who <em>authored</em><br>the song?</div>
             <div class="cru" style="background:#c8432a;"></div>
-            <div class="cbo" style="color:rgba(245,240,232,0.74);">The Suno & Udio lawsuits expose a crisis copyright law was never built to handle.</div>
+            <div class="cbo" style="color:rgba(245,240,232,0.8);">In June 2024, three major record labels sued two AI music companies — and exposed a crisis that copyright law was never built to handle. This carousel breaks down the four key tensions scholars are debating right now.</div>
+            <div class="cbo2" style="color:rgba(245,240,232,0.55);">Swipe to explore each tension →</div>
           </div>
         </div>
 
+        <!-- SLIDE 1: THE LAWSUIT -->
         <div class="cs" id="cs1">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-          <div class="cov" style="background:linear-gradient(180deg,rgba(4,6,16,0.28),rgba(4,6,16,0.9));"></div>
+          <div class="cov" style="background:linear-gradient(180deg,rgba(4,6,16,0.25),rgba(4,6,16,0.92));"></div>
           <div class="csn">2 / 8</div>
           <div class="cc">
-            <div class="ctag" style="background:rgba(200,67,42,0.9);color:#fff;">June 2024</div>
-            <div class="cti" style="color:#fff;font-size:22px;">Three labels.<br>Two AI companies.<br>One landmark case.</div>
+            <div class="ctag" style="background:rgba(200,67,42,0.92);color:#fff;">June 2024 — The Case</div>
+            <div class="cti" style="color:#fff;font-size:21px;">Three labels.<br>Two AI companies.<br>One landmark case.</div>
             <div class="sr">
-              <div class="sb2"><div class="sbn">3</div><div class="sbl">Labels</div></div>
-              <div class="sb2"><div class="sbn">2</div><div class="sbl">AI Firms</div></div>
-              <div class="sb2"><div class="sbn">∞</div><div class="sbl">Songs Used</div></div>
-            </div>
-            <div class="cbo" style="color:rgba(255,255,255,0.76);">Universal, Sony & Warner alleged Suno and Udio trained on decades of copyrighted music — no permission, no payment.</div>
-            <div class="cci">Tracy, New York Times, June 25, 2024</div>
-          </div>
-        </div>
-
-        <div class="cs" id="cs2">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-          <div class="cov" style="background:linear-gradient(170deg,rgba(2,5,18,0.48),rgba(2,5,18,0.9));"></div>
-          <div class="csn">3 / 8</div>
-          <div class="cc">
-            <div class="cey" style="color:#7eb8f5;">Tension 01 — Attribution</div>
-            <div class="tvs">
-              <div class="tvl" style="background:rgba(0,10,30,0.5);"><div class="tvw" style="color:#b5d4f4;">Credit &<br>Compensation</div></div>
-              <div class="tvm">vs</div>
-              <div class="tvr" style="background:rgba(0,0,0,0.62);"><div class="tvw" style="color:rgba(255,255,255,0.38);">The Black<br>Box</div></div>
+              <div class="sb2"><div class="sbn">3</div><div class="sbl">Major Labels</div></div>
+              <div class="sb2"><div class="sbn">2</div><div class="sbl">AI Firms Sued</div></div>
+              <div class="sb2"><div class="sbn">∞</div><div class="sbl">Songs Trained On</div></div>
             </div>
             <div class="fr">
-              <div class="cbo" style="color:rgba(255,255,255,0.84);">AI trains on thousands of artists at once — none credited or paid. Sankaran calls this an <strong style="color:#fff;">"attribution crisis."</strong></div>
-              <div class="cci">Sankaran, AI and Ethics, 2026</div>
+              <div class="cbo" style="color:rgba(255,255,255,0.85);">Universal, Sony, and Warner alleged that Suno and Udio trained their models on decades of copyrighted recordings — producing output that closely mimics real artists — without consent or compensation.</div>
+              <div class="cbo2" style="color:rgba(255,255,255,0.6);">These cases mark the first major legal attempt to apply existing copyright doctrine to generative AI trained on music.</div>
+              <div class="cci">Tracy, New York Times, June 25, 2024</div>
             </div>
           </div>
         </div>
 
+        <!-- SLIDE 2: ATTRIBUTION -->
+        <div class="cs" id="cs2">
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+          <div class="cov" style="background:linear-gradient(170deg,rgba(2,5,18,0.44),rgba(2,5,18,0.92));"></div>
+          <div class="csn">3 / 8</div>
+          <div class="cc">
+            <div class="cey" style="color:#7eb8f5;">Tension 01 — Attribution & Training Data</div>
+            <div class="tvs">
+              <div class="tvl" style="background:rgba(0,10,30,0.52);"><div class="tvw" style="color:#b5d4f4;">Credit &<br>Compensation</div></div>
+              <div class="tvm">vs</div>
+              <div class="tvr" style="background:rgba(0,0,0,0.64);"><div class="tvw" style="color:rgba(255,255,255,0.38);">The Black<br>Box</div></div>
+            </div>
+            <div class="fr">
+              <div class="cbo" style="color:rgba(255,255,255,0.85);">AI models function as "black boxes" — their internal processes are opaque, making it nearly impossible to trace which artists' work shaped the output.</div>
+              <div class="quote-block">
+                <div class="quote-text">"Without transparency in training data, the traditional mechanisms used to assign creative credit and economic value become unreliable."</div>
+                <div class="quote-attr">— Sankaran, AI and Ethics, 2026</div>
+              </div>
+              <div class="cbo2" style="color:rgba(255,255,255,0.6);">Lee and Lee further argue this breaks existing copyright management systems that depend on traceable ownership to distribute royalties.</div>
+              <div class="cci">Sankaran, 2026 · Lee & Lee, IEEE SNPD, 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: CREATIVITY -->
         <div class="cs" id="cs3">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-          <div class="cov" style="background:linear-gradient(170deg,rgba(1,10,5,0.3),rgba(1,10,5,0.88));"></div>
+          <div class="cov" style="background:linear-gradient(170deg,rgba(1,10,5,0.28),rgba(1,10,5,0.9));"></div>
           <div class="csn">4 / 8</div>
           <div class="cc">
-            <div class="cey" style="color:#7ec4a0;">Tension 02 — Creativity</div>
+            <div class="cey" style="color:#7ec4a0;">Tension 02 — Can a Machine Truly Create?</div>
             <div class="tvs">
               <div class="tvl" style="background:rgba(0,18,10,0.52);"><div class="tvw" style="color:#c8f0d8;">Human<br>Expression</div></div>
               <div class="tvm" style="background:rgba(0,0,0,0.68);">vs</div>
-              <div class="tvr" style="background:rgba(0,0,0,0.62);"><div class="tvw" style="color:rgba(200,240,216,0.36);">Statistical<br>Pattern</div></div>
+              <div class="tvr" style="background:rgba(0,0,0,0.62);"><div class="tvw" style="color:rgba(200,240,216,0.38);">Statistical<br>Recombination</div></div>
             </div>
             <div class="fr">
-              <div class="cbo" style="color:rgba(255,255,255,0.84);">Yasuda & Maruyama: AI recombines, it doesn't create. Without emotion or intention, can output be called <em>original</em>?</div>
-              <div class="cci">Yasuda & Maruyama, AI and Ethics, 2025</div>
+              <div class="cbo" style="color:rgba(255,255,255,0.85);">Yasuda and Maruyama argue that generative AI applies statistical techniques to recombine existing patterns — it does not experience emotion, cultural context, or artistic intention.</div>
+              <div class="cbo2" style="color:rgba(255,255,255,0.65);">Zhang and Kim found that musicians worry AI music "may undermine the emotional and cultural value traditionally associated with musical creation" — even as they acknowledge its efficiency.</div>
+              <div class="cci">Yasuda & Maruyama, 2025 · Zhang & Kim, OJOMUS, 2025</div>
             </div>
           </div>
         </div>
 
+        <!-- SLIDE 4: ECONOMICS -->
         <div class="cs" id="cs4">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-          <div class="cov" style="background:linear-gradient(170deg,rgba(16,7,0,0.3),rgba(16,7,0,0.88));"></div>
+          <div class="cov" style="background:linear-gradient(170deg,rgba(16,7,0,0.28),rgba(16,7,0,0.9));"></div>
           <div class="csn">5 / 8</div>
           <div class="cc">
-            <div class="cey" style="color:#fac775;">Tension 03 — Economics</div>
+            <div class="cey" style="color:#fac775;">Tension 03 — Innovation vs. Artist Survival</div>
             <div class="tvs">
               <div class="tvl" style="background:rgba(28,12,0,0.52);"><div class="tvw" style="color:#fac775;">Tech<br>Innovation</div></div>
               <div class="tvm">vs</div>
-              <div class="tvr" style="background:rgba(0,0,0,0.62);"><div class="tvw" style="color:rgba(255,255,255,0.44);">Artist<br>Survival</div></div>
+              <div class="tvr" style="background:rgba(0,0,0,0.62);"><div class="tvw" style="color:rgba(255,255,255,0.45);">Artist<br>Survival</div></div>
             </div>
             <div class="fr">
-              <div class="cbo" style="color:rgba(255,255,255,0.84);">Cheap AI floods the market — independent artists can't compete while corporations capture all the gains.</div>
+              <div class="cbo" style="color:rgba(255,255,255,0.85);">Campos-Valverde and Kaye find that industry stakeholders see AI as both opportunity and risk. Flooding the market with cheap AI content makes it harder for human musicians to compete.</div>
+              <ul class="blist">
+                <li>One proposed fix: a licensing system where AI firms pay for training data access, similar to streaming royalties</li>
+                <li>Critics warn such systems may favour large corporations, leaving independent artists with little power</li>
+              </ul>
               <div class="cci">Campos-Valverde & Kaye, New Media & Society, 2025</div>
             </div>
           </div>
         </div>
 
+        <!-- SLIDE 5: COPYRIGHT -->
         <div class="cs" id="cs5">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-          <div class="cov" style="background:linear-gradient(170deg,rgba(16,2,2,0.4),rgba(16,2,2,0.9));"></div>
+          <div class="cov" style="background:linear-gradient(170deg,rgba(16,2,2,0.38),rgba(16,2,2,0.92));"></div>
           <div class="csn">6 / 8</div>
           <div class="cc">
-            <div class="cey" style="color:#f09595;">Tension 04 — Copyright</div>
+            <div class="cey" style="color:#f09595;">Tension 04 — Infringement vs. Fair Use</div>
             <div class="tvs">
-              <div class="tvl" style="background:rgba(28,4,4,0.52);"><div class="tvw" style="color:#f7c1c1;">Infringement</div></div>
+              <div class="tvl" style="background:rgba(28,4,4,0.52);"><div class="tvw" style="color:#f7c1c1;">Copyright<br>Infringement</div></div>
               <div class="tvm" style="background:rgba(0,0,0,0.68);">vs</div>
-              <div class="tvr" style="background:rgba(8,4,18,0.56);"><div class="tvw" style="color:rgba(174,160,240,0.78);">Fair Use</div></div>
+              <div class="tvr" style="background:rgba(8,4,18,0.56);"><div class="tvw" style="color:rgba(174,160,240,0.78);">Transformative<br>Fair Use</div></div>
             </div>
             <div class="fr">
-              <div class="cbo" style="color:rgba(255,255,255,0.84);">Samuelson: does training on copyrighted data <em>transform</em> those works — or just reproduce them? Copyright was built for humans. AI breaks that.</div>
-              <div class="cci">Samuelson, Science, 2023</div>
+              <div class="cbo" style="color:rgba(255,255,255,0.85);">Samuelson identifies the core question: does training on copyrighted material transform those works into something fundamentally new — or merely reproduce them in a different form?</div>
+              <div class="quote-block">
+                <div class="quote-text">"U.S. copyright law has historically protected works created by human authors — purely machine-generated works may fall outside existing legal frameworks."</div>
+                <div class="quote-attr">— Samuelson, Science, 2023</div>
+              </div>
+              <div class="cci">Samuelson, Science, 2023 · Lim, JIPLP, 2023</div>
             </div>
           </div>
         </div>
 
+        <!-- SLIDE 6: LEGAL GAP -->
         <div class="cs" id="cs6">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-          <div class="cov" style="background:linear-gradient(170deg,rgba(3,3,12,0.44),rgba(3,3,12,0.92));"></div>
+          <div class="cov" style="background:linear-gradient(170deg,rgba(3,3,12,0.4),rgba(3,3,12,0.93));"></div>
           <div class="csn">7 / 8</div>
           <div class="cc">
-            <div class="cey" style="color:#c8432a;">The Legal Gap</div>
-            <div class="cti" style="color:#fff;font-size:24px;">Law wasn't<br>built for this.</div>
+            <div class="cey" style="color:#c8432a;">The Legal Gap — What Courts Must Decide</div>
+            <div class="cti" style="color:#fff;font-size:22px;">Law wasn't<br>built for this.</div>
             <div class="cru" style="background:#c8432a;"></div>
             <div class="fr">
-              <div class="cbo" style="color:rgba(255,255,255,0.84);">Lim: courts must balance protecting creators, enabling innovation, and keeping copyright workable — but only if AI firms open their training data.</div>
+              <div class="cbo" style="color:rgba(255,255,255,0.85);">Lim argues courts must balance three competing priorities simultaneously: protecting human creators, encouraging technological innovation, and maintaining workable legal standards.</div>
+              <ul class="blist">
+                <li>Fair use doctrine may adapt — but only with AI transparency on training data</li>
+                <li>Abandoning existing copyright frameworks entirely is not the answer</li>
+                <li>The Suno/Udio cases are the first real test of how courts will respond</li>
+              </ul>
               <div class="cci">Lim, Journal of IP Law & Practice, 2023</div>
             </div>
           </div>
         </div>
 
+        <!-- SLIDE 7: THESIS -->
         <div class="cs" id="cs7">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-          <div class="cov" style="background:linear-gradient(170deg,rgba(148,26,8,0.54),rgba(8,3,1,0.92));"></div>
+          <div class="cov" style="background:linear-gradient(170deg,rgba(148,26,8,0.52),rgba(8,3,1,0.93));"></div>
           <div class="csn">8 / 8</div>
           <div class="cc">
-            <div class="ctag" style="background:rgba(200,67,42,0.72);color:#fff;">The Argument</div>
-            <div class="cti" style="color:#fff;font-style:italic;font-weight:400;font-size:19px;font-family:'Playfair Display',serif;">"Suno & Udio aren't just a lawsuit."</div>
-            <div class="cru" style="background:rgba(255,255,255,0.28);"></div>
+            <div class="ctag" style="background:rgba(200,67,42,0.75);color:#fff;">The Argument</div>
+            <div class="cti" style="color:#fff;font-style:italic;font-weight:400;font-size:18px;font-family:'Playfair Display',serif;">"Suno & Udio aren't just a lawsuit. They are a question about what it means to author a song in the digital age."</div>
+            <div class="cru" style="background:rgba(255,255,255,0.25);"></div>
             <div class="fr">
-              <div class="cbo" style="color:rgba(255,255,255,0.86);">They are a test case for authorship when the composer is invisible, the data is hidden, and the "artist" has never lived a human moment.</div>
-              <div class="cci">#AIMusic #CopyrightLaw #WhoMakesArt #SunoUdio</div>
+              <div class="cbo" style="color:rgba(255,255,255,0.86);">These four tensions — attribution, creativity, economics, and copyright — don't exist in isolation. The lawsuits force all of them into a single courtroom, demanding answers that current law was never designed to give.</div>
+              <div class="cbo2" style="color:rgba(255,255,255,0.55);margin-top:6px;">When the composer is invisible, the training data is hidden, and the "artist" has never lived a human moment — who gets the credit, the royalties, and the rights?</div>
+              <div class="cci">#AIMusic #CopyrightLaw #WhoMakesArt #SunoUdio #GenreTranslation</div>
             </div>
           </div>
         </div>
@@ -276,9 +314,24 @@
       </div>
 
       <div class="pl" id="lc">2,847 likes</div>
-      <div class="pc"><span style="font-weight:600;">myatbhonesan</span> The Suno & Udio lawsuits aren't just about copyright — they expose who truly "authors" music in the age of AI. Swipe through all 8 slides 👉</div>
-      <div class="pc" style="padding-top:0;color:#00376b;">#AIMusic #CopyrightLaw #WhoMakesArt #SunoUdio #GenreTranslation #DigitalMedia</div>
-      <div class="pc" style="color:#8e8e8e;font-size:13px;">View all 94 comments</div>
+
+      <div class="pc"><span style="font-weight:600;">myatbhonesan</span> In June 2024, Universal, Sony, and Warner sued AI music companies Suno and Udio — alleging their models were trained on decades of copyrighted recordings without permission or payment. But these lawsuits are about much more than one legal dispute. They sit at the intersection of four unresolved tensions that scholars across law, technology, and music studies have been debating for years.</div>
+
+      <div class="pc" style="padding-top:2px;">Swipe through this carousel for a breakdown of each tension, grounded in current research. Here's the short version 👇</div>
+
+      <div class="pc" style="padding-top:2px;"><span style="font-weight:600;">01 — Attribution.</span> AI models are "black boxes" that train on thousands of artists simultaneously. Sankaran (2026) calls this an "attribution crisis" — when training data is hidden, the link between creativity, credit, and compensation breaks down entirely. Lee and Lee (2025) show this also destabilises existing copyright management systems built around traceable ownership.</div>
+
+      <div class="pc" style="padding-top:2px;"><span style="font-weight:600;">02 — Creativity.</span> Yasuda and Maruyama (2025) argue that AI doesn't create — it statistically recombines. Without emotion, lived experience, or cultural intention, can the output qualify as original art? Zhang and Kim (2025) found that even musicians who use AI tools worry it erodes the emotional authenticity that gives music its cultural value.</div>
+
+      <div class="pc" style="padding-top:2px;"><span style="font-weight:600;">03 — Economics.</span> Campos-Valverde and Kaye (2025) find that cheap AI-generated music risks flooding the market, making it harder for independent artists to earn a living. Proposed licensing solutions — where AI firms pay for training data access like streaming royalties — may still favour large corporations over individual creators.</div>
+
+      <div class="pc" style="padding-top:2px;"><span style="font-weight:600;">04 — Copyright.</span> Samuelson (2023) identifies the central legal question: does training on copyrighted material transform those works into something new, or simply reproduce them differently? U.S. copyright was built around human authorship. Lim (2023) argues fair use doctrine may adapt — but only if courts demand transparency about what AI was actually trained on.</div>
+
+      <div class="pc" style="padding-top:2px;">The Suno and Udio cases don't just ask who owns a song. They ask what authorship, originality, and fair use mean in an age where the composer is invisible, the training data is hidden, and the "artist" has never lived a single human moment.</div>
+
+      <div class="pc" style="padding-top:2px;color:#00376b;">#AIMusic #CopyrightLaw #MusicIndustry #WhoMakesArt #SunoUdio #GenreTranslation #DigitalMedia #FairUse #AIEthics #MusicRights</div>
+
+      <div class="pc" style="color:#8e8e8e;font-size:13px;padding-top:2px;">View all 94 comments</div>
       <div class="pt">3 hours ago</div>
       <div class="cbar">
         <div class="cav2"></div>
@@ -288,84 +341,28 @@
     </div>
 
     <div class="ignavbar">
-      <button class="nb"><svg width="24" height="24" viewBox="0 0 24 24" fill="#262626"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></button>
-      <button class="nb"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
-      <button class="nb"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button>
-      <button class="nb"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-      <button class="nb"><div style="width:24px;height:24px;border-radius:50%;background:#c8432a;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;">MB</div></button>
+      <button class="nb2"><svg width="24" height="24" viewBox="0 0 24 24" fill="#262626"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></button>
+      <button class="nb2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nb2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button>
+      <button class="nb2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+      <button class="nb2"><div style="width:24px;height:24px;border-radius:50%;background:#c8432a;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;">MB</div></button>
     </div>
   </div>
   <div class="hi"><div class="hb"></div></div>
 </div>
 
-<!-- IMAGE CITATIONS SECTION -->
+<!-- IMAGE CITATIONS -->
 <div class="img-credits">
   <div class="ic-title">Image Links</div>
   <table class="ic-table">
-    <tr>
-      <td class="ic-slide">Slide 1</td>
-      <td class="ic-desc">
-        <span class="ic-author">Pixabay</span> — Recording studio with UV lighting<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/recording-studio-with-ultra-violet-florescent-164938/" target="_blank">pexels.com/photo/164938</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="ic-slide">Slide 2</td>
-      <td class="ic-desc">
-        <span class="ic-author">KATRIN BOLOVTSOVA</span> — Lady Justice and gavel in law library<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/lady-justice-and-a-gavel-6077123/" target="_blank">pexels.com/photo/6077123</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="ic-slide">Slide 3</td>
-      <td class="ic-desc">
-        <span class="ic-author">panumas nikhomkhai</span> — Glowing server rack, data center<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/close-up-photo-of-mining-rig-1148820/" target="_blank">pexels.com/photo/1148820</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="ic-slide">Slide 4</td>
-      <td class="ic-desc">
-        <span class="ic-author">Pexels</span> — Piano keys close-up, dark background<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/piano-keys-1246437/" target="_blank">pexels.com/photo/1246437</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="ic-slide">Slide 5</td>
-      <td class="ic-desc">
-        <span class="ic-author">Pexels</span> — Live concert crowd with stage lighting<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/crowd-on-concert-1763075/" target="_blank">pexels.com/photo/1763075</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="ic-slide">Slide 6</td>
-      <td class="ic-desc">
-        <span class="ic-author">Sora Shimazaki</span> — Scales of justice, gavel, and law books<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/justice-scales-and-gavel-on-wooden-surface-5668882/" target="_blank">pexels.com/photo/5668882</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="ic-slide">Slide 7</td>
-      <td class="ic-desc">
-        <span class="ic-author">KATRIN BOLOVTSOVA</span> — Gavel striking sound block on wood<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/brown-wooden-gavel-on-brown-wooden-table-6077326/" target="_blank">pexels.com/photo/6077326</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="ic-slide">Slide 8</td>
-      <td class="ic-desc">
-        <span class="ic-author">Pexels</span> — Sheet music close-up<br>
-        <a class="ic-link" href="https://www.pexels.com/photo/music-note-book-210764/" target="_blank">pexels.com/photo/210764</a>
-        <span class="ic-license">Pexels Free License</span>
-      </td>
-    </tr>
+    <tr><td class="ic-slide">Slide 1</td><td class="ic-desc"><span class="ic-author">Pixabay</span> — Recording studio with UV lighting<br><a class="ic-link" href="https://www.pexels.com/photo/recording-studio-with-ultra-violet-florescent-164938/" target="_blank">pexels.com/photo/164938</a><span class="ic-license">Pexels Free License</span></td></tr>
+    <tr><td class="ic-slide">Slide 2</td><td class="ic-desc"><span class="ic-author">KATRIN BOLOVTSOVA</span> — Lady Justice and gavel in law library<br><a class="ic-link" href="https://www.pexels.com/photo/lady-justice-and-a-gavel-6077123/" target="_blank">pexels.com/photo/6077123</a><span class="ic-license">Pexels Free License</span></td></tr>
+    <tr><td class="ic-slide">Slide 3</td><td class="ic-desc"><span class="ic-author">panumas nikhomkhai</span> — Glowing server rack, data center<br><a class="ic-link" href="https://www.pexels.com/photo/close-up-photo-of-mining-rig-1148820/" target="_blank">pexels.com/photo/1148820</a><span class="ic-license">Pexels Free License</span></td></tr>
+    <tr><td class="ic-slide">Slide 4</td><td class="ic-desc"><span class="ic-author">Pexels</span> — Piano keys close-up, dark background<br><a class="ic-link" href="https://www.pexels.com/photo/piano-keys-1246437/" target="_blank">pexels.com/photo/1246437</a><span class="ic-license">Pexels Free License</span></td></tr>
+    <tr><td class="ic-slide">Slide 5</td><td class="ic-desc"><span class="ic-author">Pexels</span> — Live concert crowd with stage lighting<br><a class="ic-link" href="https://www.pexels.com/photo/crowd-on-concert-1763075/" target="_blank">pexels.com/photo/1763075</a><span class="ic-license">Pexels Free License</span></td></tr>
+    <tr><td class="ic-slide">Slide 6</td><td class="ic-desc"><span class="ic-author">Sora Shimazaki</span> — Scales of justice, gavel, and law books<br><a class="ic-link" href="https://www.pexels.com/photo/justice-scales-and-gavel-on-wooden-surface-5668882/" target="_blank">pexels.com/photo/5668882</a><span class="ic-license">Pexels Free License</span></td></tr>
+    <tr><td class="ic-slide">Slide 7</td><td class="ic-desc"><span class="ic-author">KATRIN BOLOVTSOVA</span> — Gavel striking sound block on wood<br><a class="ic-link" href="https://www.pexels.com/photo/brown-wooden-gavel-on-brown-wooden-table-6077326/" target="_blank">pexels.com/photo/6077326</a><span class="ic-license">Pexels Free License</span></td></tr>
+    <tr><td class="ic-slide">Slide 8</td><td class="ic-desc"><span class="ic-author">Pexels</span> — Sheet music close-up<br><a class="ic-link" href="https://www.pexels.com/photo/music-note-book-210764/" target="_blank">pexels.com/photo/210764</a><span class="ic-license">Pexels Free License</span></td></tr>
   </table>
 </div>
 
