@@ -2,7 +2,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 *{box-sizing:border-box;margin:0;padding:0;}
-.igw{display:flex;justify-content:center;padding:1.5rem 0 2rem;font-family:-apple-system,'Segoe UI',sans-serif;}
+.igw{display:flex;flex-direction:column;align-items:center;padding:1.5rem 0 2rem;font-family:-apple-system,'Segoe UI',sans-serif;gap:20px;}
 .phone{width:390px;background:#000;border-radius:44px;overflow:hidden;box-shadow:0 0 0 10px #1a1a1a,0 24px 60px rgba(0,0,0,0.55);}
 .sb{background:#000;padding:14px 28px 6px;display:flex;justify-content:space-between;align-items:center;}
 .sb-time{color:#fff;font-size:15px;font-weight:600;letter-spacing:-0.3px;}
@@ -64,14 +64,26 @@
 .pl{padding:0 12px 5px;font-size:13px;font-weight:600;color:#262626;}
 .pc{padding:0 12px 5px;font-size:13px;color:#262626;line-height:1.5;}
 .pt{padding:0 12px 9px;font-size:10px;color:#8e8e8e;text-transform:uppercase;letter-spacing:0.03em;}
-.cb{padding:7px 12px 14px;display:flex;align-items:center;gap:10px;border-top:0.5px solid #efefef;}
-.cav{width:28px;height:28px;border-radius:50%;background:#e0d8cc;flex-shrink:0;}
+.cbar{padding:7px 12px 14px;display:flex;align-items:center;gap:10px;border-top:0.5px solid #efefef;}
+.cav2{width:28px;height:28px;border-radius:50%;background:#e0d8cc;flex-shrink:0;}
 .ci{flex:1;font-size:13px;color:#8e8e8e;}
 .cp{font-size:13px;font-weight:600;color:#0095f6;}
 .ignavbar{background:#fff;padding:10px 0 6px;display:flex;justify-content:space-around;align-items:center;border-top:0.5px solid #dbdbdb;}
 .nb{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;cursor:pointer;}
 .hi{background:#000;padding:8px 0 10px;display:flex;justify-content:center;}
 .hb{width:120px;height:4px;background:rgba(255,255,255,0.3);border-radius:2px;}
+
+.img-credits{width:390px;background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:16px 18px;}
+.ic-title{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;color:var(--color-text-tertiary);margin-bottom:12px;font-family:-apple-system,sans-serif;}
+.ic-table{width:100%;border-collapse:collapse;font-family:-apple-system,sans-serif;}
+.ic-table tr{border-bottom:0.5px solid var(--color-border-tertiary);}
+.ic-table tr:last-child{border-bottom:none;}
+.ic-table td{padding:7px 0;vertical-align:top;}
+.ic-slide{font-size:10px;font-weight:500;color:var(--color-text-tertiary);white-space:nowrap;padding-right:10px;min-width:56px;}
+.ic-desc{font-size:11px;color:var(--color-text-secondary);line-height:1.45;}
+.ic-author{color:var(--color-text-primary);font-weight:500;}
+.ic-link{font-size:10px;color:var(--color-text-tertiary);display:block;margin-top:1px;word-break:break-all;}
+.ic-license{display:inline-block;font-size:9px;background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:4px;padding:1px 6px;margin-top:2px;}
 </style>
 
 <div class="igw">
@@ -112,7 +124,6 @@
 
       <div class="cvp" id="cvp">
 
-        <!-- SLIDE 0: Recording studio mixing board -->
         <div class="cs active" id="cs0">
           <div class="cbg" style="background-image:url('https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center top;"></div>
           <div class="cov" style="background:linear-gradient(160deg,rgba(6,3,1,0.38),rgba(6,3,1,0.84));"></div>
@@ -126,9 +137,8 @@
           </div>
         </div>
 
-        <!-- SLIDE 1: Courthouse / Lady Justice -->
         <div class="cs" id="cs1">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center;"></div>
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
           <div class="cov" style="background:linear-gradient(180deg,rgba(4,6,16,0.28),rgba(4,6,16,0.9));"></div>
           <div class="csn">2 / 8</div>
           <div class="cc">
@@ -144,9 +154,8 @@
           </div>
         </div>
 
-        <!-- SLIDE 2: Server/data center (black box / attribution) -->
         <div class="cs" id="cs2">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center;"></div>
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
           <div class="cov" style="background:linear-gradient(170deg,rgba(2,5,18,0.48),rgba(2,5,18,0.9));"></div>
           <div class="csn">3 / 8</div>
           <div class="cc">
@@ -163,9 +172,8 @@
           </div>
         </div>
 
-        <!-- SLIDE 3: Piano / musician hands (creativity) -->
         <div class="cs" id="cs3">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center;"></div>
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
           <div class="cov" style="background:linear-gradient(170deg,rgba(1,10,5,0.3),rgba(1,10,5,0.88));"></div>
           <div class="csn">4 / 8</div>
           <div class="cc">
@@ -182,9 +190,8 @@
           </div>
         </div>
 
-        <!-- SLIDE 4: Concert crowd (economics / artists) -->
         <div class="cs" id="cs4">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center;"></div>
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
           <div class="cov" style="background:linear-gradient(170deg,rgba(16,7,0,0.3),rgba(16,7,0,0.88));"></div>
           <div class="csn">5 / 8</div>
           <div class="cc">
@@ -201,9 +208,8 @@
           </div>
         </div>
 
-        <!-- SLIDE 5: Law books (copyright) -->
         <div class="cs" id="cs5">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center;"></div>
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
           <div class="cov" style="background:linear-gradient(170deg,rgba(16,2,2,0.4),rgba(16,2,2,0.9));"></div>
           <div class="csn">6 / 8</div>
           <div class="cc">
@@ -220,9 +226,8 @@
           </div>
         </div>
 
-        <!-- SLIDE 6: Gavel (legal gap) -->
         <div class="cs" id="cs6">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center;"></div>
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
           <div class="cov" style="background:linear-gradient(170deg,rgba(3,3,12,0.44),rgba(3,3,12,0.92));"></div>
           <div class="csn">7 / 8</div>
           <div class="cc">
@@ -236,9 +241,8 @@
           </div>
         </div>
 
-        <!-- SLIDE 7: Sheet music close-up (thesis) -->
         <div class="cs" id="cs7">
-          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center;"></div>
+          <div class="cbg" style="background-image:url('https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
           <div class="cov" style="background:linear-gradient(170deg,rgba(148,26,8,0.54),rgba(8,3,1,0.92));"></div>
           <div class="csn">8 / 8</div>
           <div class="cc">
@@ -276,8 +280,8 @@
       <div class="pc" style="padding-top:0;color:#00376b;">#AIMusic #CopyrightLaw #WhoMakesArt #SunoUdio #GenreTranslation #DigitalMedia</div>
       <div class="pc" style="color:#8e8e8e;font-size:13px;">View all 94 comments</div>
       <div class="pt">3 hours ago</div>
-      <div class="cb">
-        <div class="cav"></div>
+      <div class="cbar">
+        <div class="cav2"></div>
         <div class="ci">Add a comment...</div>
         <div class="cp">Post</div>
       </div>
@@ -291,9 +295,80 @@
       <button class="nb"><div style="width:24px;height:24px;border-radius:50%;background:#c8432a;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;">MB</div></button>
     </div>
   </div>
-
   <div class="hi"><div class="hb"></div></div>
 </div>
+
+<!-- IMAGE CITATIONS SECTION -->
+<div class="img-credits">
+  <div class="ic-title">Image Links</div>
+  <table class="ic-table">
+    <tr>
+      <td class="ic-slide">Slide 1</td>
+      <td class="ic-desc">
+        <span class="ic-author">Pixabay</span> — Recording studio with UV lighting<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/recording-studio-with-ultra-violet-florescent-164938/" target="_blank">pexels.com/photo/164938</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="ic-slide">Slide 2</td>
+      <td class="ic-desc">
+        <span class="ic-author">KATRIN BOLOVTSOVA</span> — Lady Justice and gavel in law library<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/lady-justice-and-a-gavel-6077123/" target="_blank">pexels.com/photo/6077123</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="ic-slide">Slide 3</td>
+      <td class="ic-desc">
+        <span class="ic-author">panumas nikhomkhai</span> — Glowing server rack, data center<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/close-up-photo-of-mining-rig-1148820/" target="_blank">pexels.com/photo/1148820</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="ic-slide">Slide 4</td>
+      <td class="ic-desc">
+        <span class="ic-author">Pexels</span> — Piano keys close-up, dark background<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/piano-keys-1246437/" target="_blank">pexels.com/photo/1246437</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="ic-slide">Slide 5</td>
+      <td class="ic-desc">
+        <span class="ic-author">Pexels</span> — Live concert crowd with stage lighting<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/crowd-on-concert-1763075/" target="_blank">pexels.com/photo/1763075</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="ic-slide">Slide 6</td>
+      <td class="ic-desc">
+        <span class="ic-author">Sora Shimazaki</span> — Scales of justice, gavel, and law books<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/justice-scales-and-gavel-on-wooden-surface-5668882/" target="_blank">pexels.com/photo/5668882</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="ic-slide">Slide 7</td>
+      <td class="ic-desc">
+        <span class="ic-author">KATRIN BOLOVTSOVA</span> — Gavel striking sound block on wood<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/brown-wooden-gavel-on-brown-wooden-table-6077326/" target="_blank">pexels.com/photo/6077326</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="ic-slide">Slide 8</td>
+      <td class="ic-desc">
+        <span class="ic-author">Pexels</span> — Sheet music close-up<br>
+        <a class="ic-link" href="https://www.pexels.com/photo/music-note-book-210764/" target="_blank">pexels.com/photo/210764</a>
+        <span class="ic-license">Pexels Free License</span>
+      </td>
+    </tr>
+  </table>
+</div>
+
 </div>
 
 <script>
